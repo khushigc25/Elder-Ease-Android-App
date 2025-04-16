@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:fontFamily="@font/opensans"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Emergency Contacts List"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView inside ScrollView for scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/emergencyContactsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:nestedScrollingEnabled="false"/>
+    </ScrollView>
+
+    <!-- Add Contact Button -->
+    <Button
+        android:id="@+id/addNewEmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/opensans"
+        android:padding="16dp"
+        android:text="Add new Emergency Contact"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</LinearLayout>

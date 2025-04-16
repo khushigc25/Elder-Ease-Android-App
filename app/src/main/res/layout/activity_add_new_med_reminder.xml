@@ -1,0 +1,220 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Single container for all content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:fontFamily="@font/opensans"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Add a New Medicine Reminder"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Content Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Medicine Name -->
+            <EditText
+                android:id="@+id/et_medicine_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medicine Name"
+                android:fontFamily="@font/opensans"
+                android:padding="12dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Medicine Type with Dropdown Icon -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <!-- Spinner -->
+                <Spinner
+                    android:id="@+id/spinner_medicine_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:padding="12dp"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_centerVertical="true"/>
+
+                <!-- Dropdown Icon -->
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/drop_down"
+                    android:contentDescription="Dropdown Icon"
+                    android:paddingEnd="16dp"/>
+            </RelativeLayout>
+
+
+            <!-- Dosage -->
+            <EditText
+                android:id="@+id/et_dosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dosage (e.g., 1 tablet, 5ml, 500mg powder)"
+                android:padding="12dp"
+                android:fontFamily="@font/opensans"
+                android:background="@drawable/edittext_bg"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Intake Time Checkboxes -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intake Time:"
+                android:fontFamily="@font/opensans"
+
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/check_before_breakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Before Breakfast" />
+                <CheckBox
+                    android:id="@+id/check_after_breakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="After Breakfast" />
+                <CheckBox
+                    android:id="@+id/check_before_lunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Before Lunch" />
+                <CheckBox
+                    android:id="@+id/check_after_lunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="After Lunch" />
+                <CheckBox
+                    android:id="@+id/check_before_dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Before Dinner" />
+                <CheckBox
+                    android:id="@+id/check_after_dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="After Dinner" />
+            </LinearLayout>
+
+            <!-- Reminder Days -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminder Days:"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:fontFamily="@font/opensans"
+                android:layout_marginBottom="8dp"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:alignmentMode="alignMargins"
+                android:rowCount="3"
+                android:layout_marginBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/check_everyday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Everyday"/>
+                <CheckBox
+                    android:id="@+id/check_monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Monday"/>
+                <CheckBox
+                    android:id="@+id/check_tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Tuesday"/>
+                <CheckBox
+                    android:id="@+id/check_wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Wednesday"/>
+                <CheckBox
+                    android:id="@+id/check_thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Thursday"/>
+                <CheckBox
+                    android:id="@+id/check_friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Friday"/>
+                <CheckBox
+                    android:id="@+id/check_saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Saturday"/>
+                <CheckBox
+                    android:id="@+id/check_sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:text="Sunday"/>
+            </GridLayout>
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btn_save_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:textSize="26sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans"
+                android:textStyle="bold"
+                android:text="Save Reminder"
+                android:padding="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

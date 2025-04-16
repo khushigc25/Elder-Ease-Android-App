@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".main.RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/opensans"
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/opensans"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/opensans"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/mobno"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/mobno"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/opensans"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/calender"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Select DOB"
+        android:focusable="false"
+        android:clickable="true"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:onClick="showDatePicker" />
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/gender_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/gender"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <RadioButton
+                android:id="@+id/gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp" />
+
+            <RadioButton
+                android:id="@+id/gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp" />
+
+            <RadioButton
+                android:id="@+id/gender_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:fontFamily="@font/opensans"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/opensans"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:onClick="signUp"
+        android:text="Create Account"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/grand_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/opensans"
+        android:textSize="22sp"
+        android:text="Already have an account?"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/createAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:allowUndo="false"
+        android:fontFamily="@font/opensans"
+        android:textSize="20sp"
+        android:onClick="signIn"
+        android:text="Sign in"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>

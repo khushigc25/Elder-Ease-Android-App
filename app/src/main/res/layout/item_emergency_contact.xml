@@ -1,0 +1,85 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Icons for Edit and Delete -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:text="Edit"
+                android:tint="@color/black" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="70dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+                android:text="Delete"
+                android:tint="@color/red" />
+        </LinearLayout>
+
+        <!-- Contact Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/contactName"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:fontFamily="@font/opensans"
+                android:hint="Contact Name"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/mobno"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:fontFamily="@font/opensans"
+                android:hint="Contact Number"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

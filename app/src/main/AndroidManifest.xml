@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".dailytips.DailyTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".news.WebViewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".news.NewsActivity"
+            android:exported="false" />
+
+        <receiver android:name=".medicinesreminder.MedicineAlarmStopReceiver" />
+        <receiver android:name=".medicinesreminder.MedicineReminderReceiver" />
+
+        <activity
+            android:name=".medicinesreminder.AddNewMedReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".medicinesreminder.EditMealTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".medicinesreminder.MedicinesReminderActivity"
+            android:exported="false" />
+
+        <receiver android:name=".tasks.ReminderReceiver" />
+        <receiver android:name=".tasks.AlarmStopReceiver" />
+
+        <activity
+            android:name=".tasks.TaskReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sos.DisplayEmergencyContactsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sos.SosConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.AddEmergencyContactsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercises.FavoritesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercises.ExerciseCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chatbot.ChatbotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fbgroups.ElderlyGroupsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercises.ExerciseDetailedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exercises.ExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".games.GamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.RegistrationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

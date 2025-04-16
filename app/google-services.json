@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "843325896666",
+    "project_id": "letshyphen-97167",
+    "storage_bucket": "letshyphen-97167.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843325896666:android:a946787bf3adb6c375b2e3",
+        "android_client_info": {
+          "package_name": "com.example.elderease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHZzMF5CzkNcA6S6I6sP-Fb3Gim4k0SMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843325896666:android:066a4580c60eac2e75b2e3",
+        "android_client_info": {
+          "package_name": "com.example.letshyphen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHZzMF5CzkNcA6S6I6sP-Fb3Gim4k0SMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

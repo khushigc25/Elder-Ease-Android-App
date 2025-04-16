@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#56BDDC</color>
+    <color name="lightBlue">#E9F8FF</color>
+    <color name="red">#FF0000</color>
+    <color name="lightred">#F04F5F</color>
+    <color name="lightGray">#D3D3D3</color>
+
+    <color name="button_background">#E9F8FF</color>  <!-- Purple shade -->
+    <color name="button_border">#98DFFC</color>  <!-- Darker border -->
+    <color name="button_text">#FFFFFF</color>  <!-- White text -->
+    <color name="button_selected">#87CEFA</color> <!-- Light blue for selected state -->
+
+
+</resources>

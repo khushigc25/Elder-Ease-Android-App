@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFF5E1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tipCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/tipText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading health tip..."
+            android:fontFamily="@font/opensans"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/nextTipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Tip"
+        android:fontFamily="@font/opensans"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"/>
+</LinearLayout>
